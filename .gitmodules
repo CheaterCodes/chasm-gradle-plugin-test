@@ -1,0 +1,3 @@
+[submodule "chasm"]
+	path = chasm
+	url = git@github.com:QuiltMC/chasm.git

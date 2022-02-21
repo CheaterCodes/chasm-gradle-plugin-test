@@ -1,0 +1,14 @@
+pluginManagement {
+    includeBuild './chasm'
+    repositories {
+        mavenCentral()
+        maven {
+            name 'Quilt'
+            url 'https://maven.quiltmc.org/repository/release'
+        }
+    }
+}
+
+rootProject.name = 'chasm-gradle-plugin-test'
+include 'subproject'
+

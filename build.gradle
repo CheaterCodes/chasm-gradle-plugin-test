@@ -1,0 +1,15 @@
+plugins {
+    id 'org.quiltmc.chasm'
+}
+
+group 'codes.cheater'
+version '1.0-SNAPSHOT'
+
+
+dependencies {
+    implementation project(':subproject')
+}
+
+test {
+    useJUnitPlatform()
+}
