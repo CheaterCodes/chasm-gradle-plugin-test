@@ -1,14 +1,13 @@
 pluginManagement {
-    includeBuild './chasm'
     repositories {
         mavenCentral()
         maven {
-            name 'Quilt'
-            url 'https://maven.quiltmc.org/repository/release'
+            name = "Quilt Snapshot Maven"
+            url = "https://maven.quiltmc.org/repository/snapshot"
         }
     }
 }
 
 rootProject.name = 'chasm-gradle-plugin-test'
-include 'subproject'
 
+include 'subproject'

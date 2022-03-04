@@ -1,12 +1,8 @@
 # Chasm Plugin Test Project
 
 This is a simple test project for [Chasm](https://github.com/QuiltMC/chasm) you can clone and experiment with.
-Chasm is included as a submodule, so when cloning you should run:
-```
-git clone --recurse-submodules git@github.com:CheaterCodes/chasm-gradle-plugin-test.git
-```
 
-# The Example
+## The Example
 
 In this repository, you'll find the main entry point in `src/main/java/codes/cheater/Main.java`.
 In the `main` function, an instance of `ExampleClass` is created.
@@ -34,7 +30,7 @@ public class ExampleClass {
 ```
 However, by placing a transformer somewhere in the `org/quiltmc/chasm/transformers` resource directory,
 we can change the access flag.
-The given project should compile, even though we're accessing a private method.
+The given project should compile and run, even though we're accessing a private method.
 
 ```
 {
@@ -52,4 +48,22 @@ The given project should compile, even though we're accessing a private method.
 }
 ```
 
-Note: The project will compile, but not run at this point in time.
+## On IDE Integration
+
+IDE integration is a bit of a pain, but we tried anyways.
+
+### IntelliJ IDEA
+
+IntelliJ can handle this plugin fairly well.
+Syncing the gradle project works, but IntelliJ only picks up on the dependencies after building.
+This means you'll perform the following steps:
+
+1. Open the project normally (File -> Open... -> Select the root directory)
+2. Build the project
+3. Sync the Gradle project
+
+In the future the plugin might force a build on import/synchronization.
+
+### Eclipse
+
+Eclipse is currently untested.

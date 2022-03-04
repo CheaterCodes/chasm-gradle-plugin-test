@@ -1,10 +1,14 @@
 plugins {
-    id 'org.quiltmc.chasm'
+    id 'application'
+    id 'org.quiltmc.chasm' version '0.0.1-SNAPSHOT'
 }
 
 group 'codes.cheater'
 version '1.0-SNAPSHOT'
 
+application {
+    mainClass = 'codes.cheater.Main'
+}
 
 dependencies {
     implementation project(':subproject')
